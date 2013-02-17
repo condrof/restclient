@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using JohnsRestWeatherService.DataContracts;
+using restClient.bookService;
 
 namespace restClient
 {
@@ -10,19 +10,17 @@ namespace restClient
     {
         static void Main(string[] args)
         {
-            WeatherService.RestWeatherServiceClient client = new WeatherService.RestWeatherServiceClient();
-            WeatherService.WeatherInfo w = new WeatherService.WeatherInfo()
+            BookServiceClient client = new BookServiceClient();
+            //values are hardcoded for simplicity. They change the value of the first record in the db
+            johnwalsh.com.BookInfo b = new johnwalsh.com.BookInfo()
             {
-                city = "Dublin",
-                Temperature = 20f,
-                windInfo = new WeatherService.WindInfo()
-                {
-                    AvgWindSpeed_KM = 6.0f,
-                    windSpeed_KM = 4.0f
-                }
+                name = "Dublin",
+                price = 30,
+                Pages = 20,
+                paperback = true
             };
-            String ret = client.UpdateWeather(w);
-            Console.WriteLine("city is now: " + w.city);
+            johnwalsh.com.BookInfo ret = client.UpdateBook(b);
+            Console.WriteLine("city is now: " + ret.name + " with " + ret.Pages + " costing " + ret.price);
 
             Console.ReadLine();
 
