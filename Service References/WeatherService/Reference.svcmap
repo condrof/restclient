@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d4bdbea-001a-4020-b28e-7628aef230b9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5575/RestWeatherService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="weatherService.wsdl" MetadataType="Wsdl" ID="3ee46346-ebe4-4c5d-af37-cf74fa16bb1d" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?wsdl" />
+    <MetadataFile FileName="RestWeatherService.xsd" MetadataType="Schema" ID="d3a587d3-aec4-4130-9ecb-fce04396ec2f" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RestWeatherService1.xsd" MetadataType="Schema" ID="8f338e37-a106-4be4-b9b0-cd24d91dd10c" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RestWeatherService.disco" MetadataType="Disco" ID="cd111caa-f80b-4312-85f7-c5a5ff69b929" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?disco" />
+    <MetadataFile FileName="RestWeatherService2.xsd" MetadataType="Schema" ID="03ac2994-89aa-453d-a864-a3ae057e6bbf" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RestWeatherService.wsdl" MetadataType="Wsdl" ID="1c08a65b-51e3-4e24-a61b-1def52514af9" SourceId="1" SourceUrl="http://localhost:5575/RestWeatherService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://johnwalsh.com" elementFormDefault="qualified" targetNamespace="http://johnwalsh.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:5575/RestWeatherService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/JohnsRestWeatherService.DataContracts" />
+  <xs:element name="GetWeather">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWeatherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetWeatherResult" nillable="true" type="tns:WeatherInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="WeatherInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Temperature" type="xs:float" />
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/JohnsRestWeatherService.DataContracts" minOccurs="0" name="weather" type="q1:WeatherDescription" />
+      <xs:element minOccurs="0" name="windInfo" nillable="true" type="tns:WindInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeatherInfo" nillable="true" type="tns:WeatherInfo" />
+  <xs:complexType name="WindInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgWindSpeed_KM" type="xs:float" />
+      <xs:element minOccurs="0" name="windSpeed_KM" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WindInfo" nillable="true" type="tns:WindInfo" />
+  <xs:element name="UpdateWeather">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="info" nillable="true" type="tns:WeatherInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateWeatherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateWeatherResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

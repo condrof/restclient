@@ -1,0 +1,5 @@
+c:\users\fergal\documents\visual studio 2010\Projects\restClient\restClient\bin\Debug\restClient.exe.config
+c:\users\fergal\documents\visual studio 2010\Projects\restClient\restClient\bin\Debug\restClient.exe
+c:\users\fergal\documents\visual studio 2010\Projects\restClient\restClient\bin\Debug\restClient.pdb
+c:\users\fergal\documents\visual studio 2010\Projects\restClient\restClient\obj\x86\Debug\restClient.exe
+c:\users\fergal\documents\visual studio 2010\Projects\restClient\restClient\obj\x86\Debug\restClient.pdb
